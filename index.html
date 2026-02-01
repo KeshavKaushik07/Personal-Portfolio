@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">KESHAV &nbsp; KAUSHIK</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-subtitle" style="margin: 20px;">MERN Full Stack Developer</div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Keshav</span>
+            </h1>
+            <p class="hero-description">
+                Motivated Full Stack Web Developer (MERN) with hands-on experience building responsive web applications,
+                REST APIs, and authentication systems. Skilled in React, Node.js, Express, and MongoDB, with a focus on
+                clean code and scalable backend logic.
+            </p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="projects-grid">
+            <a href="https://get-product-front-end.vercel.app/" target="_blank"
+                    style="text-decoration: none; color:white;">
+            <div class="project-card fade-in">
+                <div class="project-image">
+                     <img src="./images/Screenshot 2026-02-01 190428.png" alt="">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-Commerce Website</h3>
+                    <p class="project-description">
+                        Live on Vercel • Fully responsive E-commerce website with Tailwind CSS. React.js frontend with
+                        localStorage for user details. Built with Express.js and MongoDB. Complete authentication using
+                        JWT and password hashing with localStorage token storage.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React.js</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <div class="project-card fade-in">
+                <div class="project-image">
+                   
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Movie Search App</h3>
+                    <p class="project-description">
+                        Interactive movie search application with real-time API integration. Search and discover movies
+                        with detailed information, ratings, and reviews. Built with modern web technologies for a
+                        seamless user experience.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API Integration</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Todo Manager</h3>
+                    <p class="project-description">
+                        Full-featured task management application with CRUD operations. Organize and track your daily
+                        tasks efficiently with an intuitive interface and persistent storage.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React.js</span>
+                        <span class="tag">LocalStorage</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title fade-in">Skills & Expertise</h2>
+        <div class="skills-container">
+            <div class="skill-card fade-in">
+                <div class="skill-icon">💻</div>
+                <div class="skill-name">Frontend Development</div>
+                <div class="skill-level">HTML, CSS, JavaScript (ES6+), React.js</div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">⚙️</div>
+                <div class="skill-name">Backend Development</div>
+                <div class="skill-level">Node.js, Express.js, REST API Development</div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🗄️</div>
+                <div class="skill-name">Database Management</div>
+                <div class="skill-level">MongoDB, SQL</div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🔧</div>
+                <div class="skill-name">Tools & Others</div>
+                <div class="skill-level">LocalStorage, Git & GitHub, JSON, API Integration</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2 class="section-title fade-in">Let's Connect</h2>
+            <p class="hero-description fade-in">
+                Looking for a dedicated MERN stack developer? Let's build something great together!
+            </p>
+            <div class="contact-info">
+     <a href="mailto:keshavkaushik955@gmail.com" target="_blank"
+                    style="text-decoration: none; color:white;">
+                <div class="contact-item fade-in">
+                    <div class="contact-icon">📧</div>
+                    <div>keshavkaushik955@gmail.com</div>
+                </div>
+                </a>
+                <a href="https://www.linkedin.com/in/keshav-kaushik-789a0036b" target="_blank"
+                    style="text-decoration: none; color:white;">
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">💼</div>
+                        <div>LinkedIn</div>
+                    </div>
+                </a>
+                <a href="https://github.com/KeshavKaushik07" target="_blank"
+                    style="text-decoration: none; color:white;">
+                <div class="contact-item fade-in">
+                    <div class="contact-icon">🐙</div>
+                    <div>GitHub</div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Keshav. All rights reserved.</p>
+    </footer>
+<script src="./portfolio.js"></script>
+</body>
+
+</html>
