@@ -110,6 +110,7 @@
 
         /* Hero Section */
         .hero {
+            margin-top: 50px;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -219,6 +220,9 @@
         }
 
         .cta-button {
+            margin: 0 10px;
+            font-size: large;
+            letter-spacing: 1px;
             display: inline-block;
             padding: 1.2rem 3rem;
             background: var(--accent);
@@ -543,6 +547,9 @@
             .contact-info {
                 flex-direction: column;
                 gap: 1.5rem;
+            }
+            .cta-button{
+                padding: 1.2rem 2rem;
             }
         }
 
